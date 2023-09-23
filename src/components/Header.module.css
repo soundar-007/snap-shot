@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lobster&display=swap");
+
+h1 {
+  font-family: "Lobster", "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-size: 4em;
+  color: #051c33;
+}
+.container {
+  text-align: center;
+}
+input {
+  width: 350px;
+  padding: 10px;
+  outline: none;
+  border: 3px solid rgb(194, 194, 194);
+  background-color: rgb(235, 235, 235);
+}
+::placeholder {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.link {
+  display: flex;
+  justify-content: space-between;
+  width: 380px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.link * {
+  text-decoration: none;
+  padding: 8px 14px;
+  color: white;
+  background-color: #051c33;
+  border-radius: 2px;
+}
+.container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 700px) {
+  .container {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .container .link {
+    flex-direction: column;
+    width: 100%;
+  }
+  .container .link * {
+    margin-top: 2px;
+  }
+}
